@@ -19,7 +19,7 @@ LOCAL_CPPFLAGS = ''
 if rtconfig.CROSS_TOOL == 'gcc':
     LOCAL_CPPFLAGS += ' -std=c++11'
 
-group = DefineGroup('naxos', src, depend = [''], CPPPATH = CPPPATH, LOCAL_CCFLAGS=LOCAL_CPPFLAGS )
+group = DefineGroup('naxos', src, depend = ['PKG_USING_NAXOS'], CPPPATH = CPPPATH, LOCAL_CCFLAGS=LOCAL_CPPFLAGS )
 
 Return('group')
 
